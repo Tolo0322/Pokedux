@@ -3,10 +3,10 @@ import { Card } from "antd";
 import Meta from "antd/es/card/Meta";
 
 
-const PokemonCard = ({ pokemon } ) => {
+const PokemonCard = ({ pokemon, image } ) => {
   return <Card 
     title={pokemon}
-    cover={<img alt="ditto" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png" />}
+    cover={<img alt="pokemon.name" src={image} />}
     extra={<StarOutlined />}
   >
     <Meta description="fire, magic" />
